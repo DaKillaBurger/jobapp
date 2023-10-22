@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="JAPP.css">
+</head>
+<form method="post" action="https://register-demo.freecodecamp.org">
+    <h1>Job Application Form</h1>
+    <div class="divider" for="job-application-form"></div>
+        <p>Thank you for your interest in working with us. Please check below for available job opportunities that meet your criteria and send your application by filling out the Job Application Form.</p>
+    <div class="text-input">   
+        <label for="name">Name </label>
+        <input id="first-name" name="first-name" type="text" required placeholder="First"/> <input id="last-name" name="last-name" type="text" required placeholder="Last" class="last-name"/> 
+    </div>
+    <div class="email-input">
+        <label for="email">Email </label>
+        <input id="email" name="email" type="email" placeholder="john.doe@example.com" required>
+    </div>
+    <div>
+        <label for="position" class="title">What position are you applying for? </label> 
+        <label for="available-date" class="title">Available Date </label>
+        <select id="position" name="position" required>
+        </div>
+    <div class="dropdown">
+            <option value="">-Select-</option>
+            <option value="1">Cashier Associate</option>
+            <option value="2">Sales Associate</option>
+            <option value="3">Stock Room Associate</option>
+            <option value="4">Loss Prevention Associate</option>
+            <option value="5">Store Manager</option>   
+            </select>  
+        <select id="available-date" name="available-date" required>
+            <option value="">MM / DD / YYYY</option>
+            <option value="1">03 / 01 / 1993</option>
+            <option value="2">03 / 02 / 1993</option>
+            <option value="3">03 / 03 / 1993</option>
+            <option value="4">03 / 04 / 1993</option>
+            <option value="5">03 / 05 / 1993</option>
+        </select>
+    </div>
+    <div class="radio">
+        <legend>What is your current employee status?</legend>
+        <label for="employed"><input id="employed"  type="radio" class="inline" name="status" required> Employed</label>
+        <label for="unemployed"><input id="unemployed"  type="radio" class="inline" name="status"> Unemployed</label>
+        
+    </div>
+    <div class="radio1">
+        <label for="self-employed"><input id="self-employed"  type="radio" class="inline" name="status"> Self-Employed</label>
+        <label for="student"><input id="student"  type="radio" class="inline" name="status"> Student</label>
+    </div>
+    <div class="text-input">
+        <label for="resume-link" class="title2">Please provide your resume link </label>
+        <label for="resume-upload" class="title2">Please upload your resume </label>
+        <input id="resume-link" name="resume-link" type="url" placeholder="https://www.example.com" required>
+        
+        <input id="resume-upload" name="resume-upload" type="file">
+        <label for="references">Do you have references? (optional) </label>
+        <input id="references-first" name="references-first" type="text" placeholder="First"> <input id="references-last" name="references-last" type="text" placeholder="Last" class="last-name"> 
+    </div>
+    <div class="email-input">
+        <label for="ref-email">Reference email </label>
+        <input id="ref-email" name="ref-email" type="email" placeholder="john.doe@example.com">
+    </div>
+    <div class="buttons">
+        <button type="reset" value="reset">Reset</button>
+        <button type="submit" value="submit">Apply</button>
+    </div>
+</form>
+<body>
+    
+</body>
+</html>
